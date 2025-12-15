@@ -1,7 +1,6 @@
-streamlit
+streamlit>=1.30.0
 pandas
 python-dotenv
-google-generativeai
+openai>=1.0.0
 plotly
-streamlit_audio_recorder
 openpyxl
