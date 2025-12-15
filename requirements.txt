@@ -1,0 +1,7 @@
+streamlit
+pandas
+python-dotenv
+google-generativeai
+plotly
+streamlit_audio_recorder
+openpyxl

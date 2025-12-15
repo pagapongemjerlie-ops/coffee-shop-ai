@@ -1,0 +1,186 @@
+/* =========================================================
+   GLOBAL APP BACKGROUND
+========================================================= */
+.stApp {
+    background: linear-gradient(135deg, #FFF8E7 0%, #F5E6D3 100%);
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* =========================================================
+   SIDEBAR – BLACK THEME (STREAMLIT FIX)
+========================================================= */
+section[data-testid="stSidebar"] {
+    background: #0b0b0b !important;
+    border-right: 3px solid #8B4513;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #ffffff !important;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: #f5d7b2 !important;
+}
+
+section[data-testid="stSidebar"] hr {
+    border-color: #333 !important;
+}
+
+/* Sidebar buttons */
+section[data-testid="stSidebar"] .stButton > button {
+    background: linear-gradient(135deg, #6F4E37, #8B4513) !important;
+    color: white !important;
+    border-radius: 8px !important;
+    border: none !important;
+    width: 100%;
+}
+
+/* Sidebar checkboxes */
+section[data-testid="stSidebar"] .stCheckbox label {
+    color: white !important;
+}
+
+/* =========================================================
+   MAIN HEADER
+========================================================= */
+.main-header {
+    background: linear-gradient(135deg, #6F4E37 0%, #8B4513 100%);
+    padding: 2rem;
+    border-radius: 18px;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.6rem;
+    font-weight: 800;
+}
+
+.main-header p {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* =========================================================
+   CHAT CONTAINER
+========================================================= */
+.chat-container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 18px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    margin-bottom: 2rem;
+}
+
+/* =========================================================
+   AI EXPLANATION CARD – FIX TEXT VISIBILITY
+========================================================= */
+.info-card {
+    background: #fffaf3 !important;     /* light coffee cream */
+    color: #2b1b12 !important;          /* dark brown text */
+    padding: 1.6rem;
+    border-radius: 16px;
+    border-left: 5px solid #8B4513;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Ensure ALL text inside is visible */
+.info-card * {
+    color: #2b1b12 !important;
+}
+
+/* Code blocks (if AI outputs lists/code) */
+.info-card pre,
+.info-card code {
+    background: #f3e8da !important;
+    color: #3b2a20 !important;
+    padding: 0.6rem;
+    border-radius: 6px;
+}
+
+.stButton > button {
+    background: linear-gradient(135deg, #6F4E37, #8B4513);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.6rem 2rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(111,78,55,0.4);
+}
+
+/* =========================================================
+   TEXT INPUT
+========================================================= */
+.stTextInput > div > div > input {
+    background: #1c1c1c;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid #8B4513;
+    padding: 0.75rem;
+}
+
+.stTextInput > div > div > input::placeholder {
+    color: #aaa;
+}
+
+/* =========================================================
+   TABS
+========================================================= */
+button[data-baseweb="tab"] {
+    background: transparent !important;
+    color: #6F4E37 !important;
+    font-weight: 700;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    border-bottom: 3px solid #8B4513 !important;
+    color: #8B4513 !important;
+}
+
+/* =========================================================
+   DATAFRAME
+========================================================= */
+.dataframe {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead tr th {
+    background-color: #6F4E37 !important;
+    color: white !important;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f1e8 !important;
+}
+
+/* =========================================================
+   METRIC CARD
+========================================================= */
+.metric-card {
+    background: linear-gradient(135deg, #FFF8E7, #FFEFD5);
+    padding: 1rem;
+    border-radius: 14px;
+    border: 2px solid #D4A574;
+    text-align: center;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+footer {
+    visibility: hidden;
+}
